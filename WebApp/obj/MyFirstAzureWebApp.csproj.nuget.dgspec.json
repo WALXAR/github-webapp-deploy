@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\walter.bermudez\\Desktop\\dotnet\\MyFirstAzureWebApp\\MyFirstAzureWebApp.csproj": {}
+    "C:\\Users\\walter.bermudez\\Desktop\\dotnet\\github-webapp-deploy\\WebApp\\MyFirstAzureWebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\walter.bermudez\\Desktop\\dotnet\\MyFirstAzureWebApp\\MyFirstAzureWebApp.csproj": {
+    "C:\\Users\\walter.bermudez\\Desktop\\dotnet\\github-webapp-deploy\\WebApp\\MyFirstAzureWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\walter.bermudez\\Desktop\\dotnet\\MyFirstAzureWebApp\\MyFirstAzureWebApp.csproj",
+        "projectUniqueName": "C:\\Users\\walter.bermudez\\Desktop\\dotnet\\github-webapp-deploy\\WebApp\\MyFirstAzureWebApp.csproj",
         "projectName": "MyFirstAzureWebApp",
-        "projectPath": "C:\\Users\\walter.bermudez\\Desktop\\dotnet\\MyFirstAzureWebApp\\MyFirstAzureWebApp.csproj",
+        "projectPath": "C:\\Users\\walter.bermudez\\Desktop\\dotnet\\github-webapp-deploy\\WebApp\\MyFirstAzureWebApp.csproj",
         "packagesPath": "C:\\Users\\walter.bermudez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\walter.bermudez\\Desktop\\dotnet\\MyFirstAzureWebApp\\obj\\",
+        "outputPath": "C:\\Users\\walter.bermudez\\Desktop\\dotnet\\github-webapp-deploy\\WebApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\walter.bermudez\\AppData\\Roaming\\NuGet\\NuGet.Config"

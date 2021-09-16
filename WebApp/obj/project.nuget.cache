@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QuaqSgVqMYppwYfaQkM06tE9iLzrHGBEQmIc6dr8B4Nv/8j78/SoLRN6zo/wimkZKRFqsGfpwOudslGZIann7A==",
+  "dgSpecHash": "cs1swvvmyD2ws17ENrSnTwy/OS6C/28tILWOlI5+toIhTkKe0a//Pgzc71ZHJW61R6euWgTtwGKyjfyZESJKtw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\walter.bermudez\\Desktop\\dotnet\\MyFirstAzureWebApp\\MyFirstAzureWebApp.csproj",
+  "projectFilePath": "C:\\Users\\walter.bermudez\\Desktop\\dotnet\\github-webapp-deploy\\WebApp\\MyFirstAzureWebApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
