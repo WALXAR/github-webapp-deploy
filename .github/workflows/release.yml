@@ -4,7 +4,7 @@ on: [push]
 
 env:
   AZURE_WEBAPP_NAME: MyFirstAzureWebApp    # set this to your application's name
-  AZURE_WEBAPP_PACKAGE_PATH: './WebApp'      # set this to the path to your web app project, defaults to the repository root
+  AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
   DOTNET_VERSION: '5.0'                  # set this to the dot net version to use
 
 jobs:
@@ -34,14 +34,14 @@ jobs:
         run: |
           dotnet restore ${{ env.AZURE_WEBAPP_NAME }}
           dotnet build ${{ env.AZURE_WEBAPP_NAME }} --configuration Release
-          dotnet publish ${{ env.AZURE_WEBAPP_NAME }} -c Release -o '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/MyFirstAzureWebApp' 
+          dotnet publish ${{ env.AZURE_WEBAPP_NAME }} -c Release -o '${{ env.GITHUB_WORKSPACE }}/MyFirstAzureWebApp' 
           
       # Deploy to Azure Web apps
       - name: 'Run Azure webapp deploy action using publish profile credentials'
         uses: azure/webapps-deploy@v2
         with: 
           app-name: ${{ env.AZURE_WEBAPP_NAME }} # Replace with your app name
-          package: '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/MyFirstAzureWebApp'
+          package: '${{ env.GITHUB_WORKSPACE }}/MyFirstAzureWebApp'
       
       - name: logout
         run: |
