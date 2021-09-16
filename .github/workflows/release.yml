@@ -34,14 +34,14 @@ jobs:
         run: |
           dotnet restore ${{ env.AZURE_WEBAPP_NAME }}
           dotnet build ${{ env.AZURE_WEBAPP_NAME }} --configuration Release
-          dotnet publish ${{ env.AZURE_WEBAPP_NAME }} -c Release -o '${{ env.GITHUB_WORKSPACE }}/MyFirstAzureWebApp' 
+          dotnet publish ${{ env.AZURE_WEBAPP_NAME }} -c Release -o '${{ env.GITHUB_WORKSPACE }}' 
           
       # Deploy to Azure Web apps
       - name: 'Run Azure webapp deploy action using publish profile credentials'
         uses: azure/webapps-deploy@v2
         with: 
           app-name: ${{ env.AZURE_WEBAPP_NAME }} # Replace with your app name
-          package: '${{ env.GITHUB_WORKSPACE }}/MyFirstAzureWebApp'
+          package: '${{ env.GITHUB_WORKSPACE }}'
       
       - name: logout
         run: |
