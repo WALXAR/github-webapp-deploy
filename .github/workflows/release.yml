@@ -18,6 +18,10 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
+      - name: pwd
+        run:  |
+          pwd
+
       
       # Setup .NET Core SDK
       - name: Setup .NET Core
